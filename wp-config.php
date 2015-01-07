@@ -14,24 +14,40 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
+    define('WP_ENV', 'dev');
+} else {
+    define('WP_ENV', 'prod');
+}
 
-/** MySQL database username */
-define('DB_USER', 'username_here');
+if (WP_ENV == 'dev') {
 
-/** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+    define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/wordpress');
+    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT']);
+    define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+    define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/wp-content');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+    define('DB_NAME', 'overeasy-dev');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_HOST', 'localhost');
+    define('DB_CHARSET', 'utf8');
+    define('DB_COLLATE', '');
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+} else {
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+    define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+    define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+    define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+    define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+
+    define('DB_NAME', 'overeasy-prod');
+    define('DB_USER', 'aleesley');
+    define('DB_PASSWORD', '0ver3asy1');
+    define('DB_HOST', 'overeasyomaha.com');
+    define('DB_CHARSET', 'utf8');
+    define('DB_COLLATE', '');
+}
 
 /**#@+
  * Authentication Unique Keys and Salts.
