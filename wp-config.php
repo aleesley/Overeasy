@@ -27,7 +27,7 @@ if (WP_ENV == 'dev') {
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/wp-content');
 
-    define('DB_NAME', 'overeasy-dev');
+    define('DB_NAME', 'overeasy-local');
     define('DB_USER', 'root');
     define('DB_PASSWORD', 'root');
     define('DB_HOST', 'localhost');
@@ -41,10 +41,10 @@ if (WP_ENV == 'dev') {
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
-    define('DB_NAME', 'overeasy-prod');
+    define('DB_NAME', 'overeasy-dev');
     define('DB_USER', 'aleesley');
-    define('DB_PASSWORD', '0ver3asy1');
-    define('DB_HOST', 'overeasyomaha.com');
+    define('DB_PASSWORD', '0ver3asy1!');
+    define('DB_HOST', 'dev.overeasyomaha.com');
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
 }
