@@ -55,7 +55,8 @@ if ( ! class_exists( 'ReduxFramework_customizer_typography' ) ) {
 
 			if ( empty( $this->extension_dir ) ) {
 				$this->extension_dir = trailingslashit( str_replace( '\\', '/', dirname( __FILE__ ) ) );
-				$this->extension_url = site_url( str_replace( trailingslashit( str_replace( '\\', '/', ABSPATH ) ), '', $this->extension_dir ) );
+				// $this->extension_url = site_url( str_replace( trailingslashit( str_replace( '\\', '/', ABSPATH ) ), '', $this->extension_dir ) );
+				$this->extension_url = site_url();
 			}
 
 			// Init wp_filesystem
