@@ -874,7 +874,7 @@ var CoverAnimation = {
 
             var animatedInTime      = timeline.getLabelTime("animatedIn"),
                 animatedOutTime     = timeline.getLabelTime("animatedOut"),
-                start               = headerTop + headerHeight / 2 - wh / 2,
+                start               = headerTop + headerHeight / 2 - wh / 2 + 150,
                 end                 = start + headerHeight / 2,
                 ab, bc;
 
