@@ -196,7 +196,7 @@ function twentythirteen_admin_header_style() {
 		text-decoration: underline;
 	}
 	#headimg h2 {
-		font: 200 italic 24px "Source Sans Pro", Helvetica, sans-serif;
+		font: 200 italic 24px "AvenirNextLTPro-DemiCn", "Source Sans Pro", Helvetica, sans-serif;
 		margin: 0;
 		text-shadow: none;
 	}

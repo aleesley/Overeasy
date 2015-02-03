@@ -223,7 +223,7 @@ html .woocommerce ul.products {
   .woocommerce ul.products li.product .price {
     margin-bottom: 0 !important;
     font-size: 19px !important;
-    font-family: "Source Sans Pro", Georgia, serif;
+    font-family: "AvenirNextLTPro-DemiCn", "Source Sans Pro", Georgia, serif;
     color: #262526 !important;
     -moz-transition: opacity 0.2s linear;
     -o-transition: opacity 0.2s linear;
