@@ -837,7 +837,7 @@ var CoverAnimation = {
 
             // ------ A
 
-            timeline.fromTo($title, 0.72, {'letter-spacing': '1em', 'margin-right': '-0.9em'}, {'letter-spacing': '0.2em', 'margin-right': '-0.1em', ease: pixGS.Expo.easeOut});
+            timeline.fromTo($title, 0.72, {'letter-spacing': '.07em', 'margin-right': '-0.9em'}, {'letter-spacing': '0.07em', 'margin-right': '-0.1em', ease: pixGS.Expo.easeOut});
             timeline.fromTo($title, 0.89, {opacity: 0}, {opacity: 1, ease: pixGS.Expo.easeOut}, '-=0.72');
             timeline.fromTo($title, 1, {'y': 30}, {'y': 0, ease: pixGS.Expo.easeOut}, '-=0.89');
             timeline.fromTo($subtitle, 0.65, {opacity: 0}, {opacity: 1, ease: pixGS.Quint.easeOut}, '-=0.65');

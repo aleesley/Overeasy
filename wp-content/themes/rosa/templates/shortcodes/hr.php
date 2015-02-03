@@ -14,14 +14,14 @@ if ( $type == 'line-flower' ) {
 	echo '<div ' . $classes . '>' . PHP_EOL .
             '<div class="line  line--left"></div>' . PHP_EOL .
             '<div class="line  line--right"></div>' . PHP_EOL .
-            '<div class="star">&#10043;</div>' . PHP_EOL .
+            '<div class="star"><img src="http://overeasy-local/wp-content/uploads/2015/02/flourish.png" alt="" height="17" width="21"></div>' . PHP_EOL .
             '<div class="arrows">' . PHP_EOL .
                 '<div class="arrow arrow--left"></div>' . PHP_EOL .
                 '<div class="arrow arrow--right"></div>' . PHP_EOL .
             '</div>' . PHP_EOL .
         '</div>' . PHP_EOL ;
 } elseif ( $type == 'flower' ) {
-	echo '<div ' . $classes . '>&#10043;</div>' . PHP_EOL ;
+	echo '<div ' . $classes . '><img src="http://overeasy-local/wp-content/uploads/2015/02/flourish.png" alt="" height="17" width="21"></div>' . PHP_EOL ;
 } else {
 	echo '<hr ' . $classes . '/>' . PHP_EOL ;
 }

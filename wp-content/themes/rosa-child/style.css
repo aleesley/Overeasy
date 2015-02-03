@@ -12,3 +12,47 @@ Tags: black, orange, light, one-column, two-columns, right-sidebar, flexible-wid
 */
 
 /* Add your custom CSS rules that overwrite the ones in the main Lens theme here */
+
+.map__marker {
+    padding: 14px 20px;
+    border-radius: 0;
+}
+
+p.menu-list__item-desc {
+    padding-right: 50px;
+}
+
+h1, h2, .tabs__nav, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    letter-spacing: .05em;
+}
+
+.headline__primary {
+    letter-spacing: .03em;
+}
+
+.menu-list hr {
+    margin: 0px 0 36px;
+}
+
+.menu-list__item-title{
+    letter-spacing: .025em;
+}
+
+.menu-list__item-price {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.header--transparent .site-header.headroom--top {
+    background: rgba(0, 0, 0, .3);
+}
+
+.grid__item .menu-list {
+    padding: 0 15px;
+}
+
+.tabs__nav {
+    margin-top: 10px;
+}

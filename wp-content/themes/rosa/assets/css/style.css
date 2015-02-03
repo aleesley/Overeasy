@@ -6691,7 +6691,7 @@ h1, h2, .tabs__nav, h3, h4, h5, h6, hgroup, p {
 
 h1, h2, .tabs__nav, h3, h4, h5, h6 {
   margin-bottom: 30px;
-  font-family: "Source Sans Pro", Georgia, serif;
+  font-family: "AvenirNextLTPro-DemiCn", "Source Sans Pro", Georgia, serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -7080,7 +7080,7 @@ input[type="color"],
   margin-top: 0;
   margin-left: 6px; }
 
-/** 
+/**
   * Inline forms
   *
   * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
@@ -7591,7 +7591,7 @@ input[type="color"],
 .badge {
   width: 2.5em;
   padding: .15em 0;
-  font-family: "Source Sans Pro", Georgia, serif;
+  font-family: "AvenirNextLTPro-DemiCn", "Source Sans Pro", Georgia, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.51;
@@ -8553,7 +8553,7 @@ a.nav-trigger {
     width: 50%; } }
 /**
  * Separator Shortcode
- * <hr class="separator" />  
+ * <hr class="separator" />
  */
 /*==========  $SEPARATORS  ==========*/
 hr, .separator {
@@ -9798,7 +9798,7 @@ a.site-logo--text {
       border-bottom: 0; }
 
 .latest-comments__author {
-  font-family: "Source Sans Pro", Georgia, serif;
+  font-family: "AvenirNextLTPro-DemiCn", "Source Sans Pro", Georgia, serif;
   text-transform: uppercase;
   color: #262526;
   margin-right: 3px; }

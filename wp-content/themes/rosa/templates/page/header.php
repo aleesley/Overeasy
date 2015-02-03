@@ -103,6 +103,9 @@ if ( get_page_template_slug( get_the_ID() ) == 'page-templates/contact.php' ) {
 								<?php if ( ! empty( $description ) ) {
 									echo '<div class="headline__description">' . $description . '</div>' . PHP_EOL;
 								} ?>
+								<?php
+
+								 ?>
 							</hgroup>
 						</div>
 					</div>
@@ -194,6 +197,9 @@ if ( get_page_template_slug( get_the_ID() ) == 'page-templates/contact.php' ) {
 									echo '<h2 class="headline__secondary">' . $subtitle . '</h2>' . PHP_EOL;
 								} ?>
 								<h1 class="headline__primary"><?php esc_html_e( $title ) ?></h1>
+								<?php if ( get_the_ID() == 477 ) {
+									echo '<h1 class="headline__primary"><img src="http://overeasy-local/wp-content/uploads/2015/02/header.png" alt="Overeasy" width="601" height="178"/></h1>' . PHP_EOL;
+								} ?>
 								<?php if ( ! empty( $description ) ) {
 									echo '<div class="headline__description">' . $description . '</div>' . PHP_EOL;
 								} ?>
