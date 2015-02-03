@@ -57,3 +57,13 @@ function rosa_child_theme_setup() {
       show_admin_bar(false);
     }
   }
+
+
+  /*--------------------
+     Add MyFonts Files
+  --------------------*/
+  function rosa_child_scripts() {
+    wp_enqueue_script( 'overeasy-font', get_template_directory_uri() . '/fonts/Over_Easy.js', array(), '', true );
+  }
+
+  add_action( 'wp_enqueue_scripts', 'rosa_child_scripts' );
